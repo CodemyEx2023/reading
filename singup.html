@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="images/Top logo.png">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="fa-solid">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <br>
+        <img src="images/Top logo.png" alt="Top Logo Image"  width="100px" draggable="false">
+        <div class="cut-section">
+            <div class="form-div">
+                <form action="">
+                    <label for="Full Name">Full Name</label>
+                    <input type="text" placeholder="Input your Full Name" id="Full Name" required pattern="[a-z]*">
+                    <label for="Email">E-mail Address</label>
+                    <input type="email"  placeholder="Input your Email Address" id="Email" required>
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Input Password" id="Password" required><i class="fas fa-eye" id="password-toggle"></i>
+                    </form>
+            </div>
+           <a href="#"><input type="button" value="Sign Up" class="sign-btn"></a>
+           <p>Or</p>
+           <div class="icons">
+            <a href="https://www.google.com/"><img src="images/google.png" alt="google image" class="google-logo" width="30px" draggable="false"></a>
+            <a href="https://www.apple.com/"><img src="images/apple2.png" alt="apple image" class="apple-logo" width="30px" draggable="false"></a>
+            <a href="https://www.facebookcom/"><img src="images/facebook.png" alt="facebook image" class="facebook-logo" width="30px" draggable="false"></a>
+            <p class="p-acct">Already have an account? <a href="login.html" class="login-btn">Log In.</a></p>
+           </div>
+           </div>
+       </div>
+        </div>
+
+<script>
+     const togglePassword = document.querySelector("#password-toggle");
+        const password = document.querySelector("#Password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "Password" ? "text" : "Password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("fa fa-eye");
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    background-color: #710080;
+    font-family: sans-serif;
+}
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+.container{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background: #710080;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.sign-btn{
+    color: black;
+    background-color: #ffc400;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+
+}
+.p-acct {
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.login-btn{
+    text-decoration: none;
+    color: #ffc400;
+    background-color: none;
+}
